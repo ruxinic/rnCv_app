@@ -1,35 +1,55 @@
-import { Tabs } from 'expo-router';
-import React from 'react';
-
-import { HapticTab } from '@/components/haptic-tab';
-import { IconSymbol } from '@/components/ui/icon-symbol';
-import { Colors } from '@/constants/theme';
-import { useColorScheme } from '@/hooks/use-color-scheme';
+import {Tabs} from "expo-router";
+import Ionicons from "@expo/vector-icons/Ionicons";
+import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
+import { Provider as PaperProvider } from "react-native-paper";
 
 export default function TabLayout() {
-  const colorScheme = useColorScheme();
-
-  return (
-    <Tabs
-      screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? 'dark'].tint,
-        headerShown: false,
-        tabBarButton: HapticTab,
-      }}>
-      <Tabs.Screen
-        name="index"
-        options={{
-          title: 'Home',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
-        }}
-      />
-      <Tabs.Screen
-        name="explore"
-        options={{
-          title: 'Explore',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
-        }}
-      />
-    </Tabs>
-  );
+    return (
+        <Tabs
+        screenOptions={{
+            tabBarActiveTintColor: "#e0a4d2ff",
+            headerStyle: {
+                backgroundColor: '#eed2e5ff'
+            },
+            headerShadowVisible: false,
+            headerTintColor: '#1b1a1bff',
+            tabBarStyle: {
+            backgroundColor: '#f8f5f6ff',
+            },
+        }}>
+            <Tabs.Screen name = "index" 
+            options={{
+                title: 'About me...',
+                tabBarIcon: ({color, focused}) => 
+                    (<Ionicons name = {focused ? 'home-sharp' : 'home-outline'}
+                    color={color} size={24} />
+                ),
+            }} />
+            <Tabs.Screen name = "education"
+            options={{
+                title: 'Education',
+                tabBarIcon: ({color, focused}) =>
+                (<Ionicons name = {focused ? 'school-outline' : 'school-sharp'}
+                    color={color} size={24}/>
+                ),
+            }}/>
+            <Tabs.Screen name = "grades" 
+            options={{
+                title: "Grades",
+                tabBarIcon: ({color, focused}) => 
+                (<MaterialCommunityIcons name = {focused ? 'numeric-10-box-multiple': 'numeric-10-box-multiple-outline'}
+                    color={color} size={24} />
+                )
+                }} />
+            <Tabs.Screen name = "projects" 
+            options={{
+                title: "Projects",
+                tabBarIcon: ({color, focused}) => 
+                (<MaterialCommunityIcons name = {focused ? 'laptop': 'laptop-account'}
+                    color={color} size={24} />
+                )
+                }} />
+        </Tabs>
+    );
 }
+
