@@ -12,10 +12,10 @@ export default function Button({ label, theme }: Props) {
       <View
         style={[
           styles.buttonContainer,
-          { borderWidth: 4, borderColor: '#0a0331ff', borderRadius: 18 },
+          { borderWidth: 4, borderColor: '#d9c4caff', borderRadius: 18 },
         ]}>
         <Pressable
-          style={[styles.button, { backgroundColor: '#fff' }]}
+          style={[styles.button, { backgroundColor: '#cfaccaff' }]}
           onPress={() => alert('FUN FACT.')}>
           <FontAwesome name="picture-o" size={18} color="#25292e" style={styles.buttonIcon} />
           <Text style={[styles.buttonLabel, { color: '#25292e' }]}>{label}</Text>
@@ -25,9 +25,9 @@ export default function Button({ label, theme }: Props) {
   }
 
   return (
-    <View style={styles.buttonContainer}>
+    <View style={[styles.buttonContainer, {paddingTop: 5, borderWidth: 4, borderColor: '#b66c9cff', borderRadius:18},]}>
       <Pressable style={styles.button} onPress={() => alert('FUN FACT.')}>
-        <Text style={styles.buttonLabel}>{label}</Text>
+        <Text style={[styles.buttonLabel, {color: '#160213ff'}]}>{label}</Text>
       </Pressable>
     </View>
   );
@@ -35,9 +35,9 @@ export default function Button({ label, theme }: Props) {
 
 const styles = StyleSheet.create({
   buttonContainer: {
-    width: 320,
-    height: 68,
-    marginHorizontal: 20,
+    width: 250,
+    height: 40,
+    marginHorizontal: 10,
     alignItems: 'center',
     justifyContent: 'center',
     padding: 3,
