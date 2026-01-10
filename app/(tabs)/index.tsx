@@ -2,13 +2,28 @@ import Button from "@/components/Button";
 import CircleButton from '@/components/CircleButton';
 import IconButton from '@/components/IconButton';
 import ImageViewer from "@/components/ImageViewer";
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Modal, Pressable } from 'react-native';
+import { Image } from "expo-image";
+import { router } from "expo-router";
+import { useEffect, useRef, useState } from "react";
+import WelcomeModal from "@/components/WelcomeModal";
+import BouncingCircleButton from "@/components/BounceCircleButton";
 
 
 const ruxiImage = require('@/assets/images/Subject.png');
-
+const img = require("@/assets/images/welcome-illustration-svg-download-png-3231448.png");
 
 export default function Index() {
+  const [isModalVisible, setIsModalVisible] = useState<boolean>(false);
+
+  const onModalClose = () => {
+    setIsModalVisible(false);
+  }
+
+  const openModal = () => {
+    setIsModalVisible(true);
+  }
+
   return (
     <View style={styles.container}>
       <View style={styles.imageContainer}>
@@ -20,16 +35,18 @@ export default function Index() {
           <Text>Welcome to Ruxandra's CV app!</Text>
           <Text>Get ready to get to know me!</Text>
         </View>
-        <CircleButton onPress={() => alert('ok')}/>
+        <BouncingCircleButton onPress={openModal}/>
+        <WelcomeModal visible={isModalVisible} onClose={onModalClose} imgSource={img} />
       </View>
       <View style={styles.textContainer}>
         <Text>Press here to learn how to navigate the app:</Text>
-        <IconButton label="" onPress={() => alert('FUN FACT.')} icon="question-mark"/>
+        <IconButton label="" onPress={() => router.push("/about_app")} icon="question-mark"/>
       </View>
       <View style={styles.footerCont}>
         <Button theme="primary" label="Find Out!"/>
         <Button label="Diff button!"/>
       </View>
+
     </View>
   );
 }
@@ -70,7 +87,5 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     width: '100%',    
     paddingHorizontal: 60,
-},
-
-
+  },
 });
