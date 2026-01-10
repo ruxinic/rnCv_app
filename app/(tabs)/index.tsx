@@ -8,6 +8,7 @@ import { router } from "expo-router";
 import { useEffect, useRef, useState } from "react";
 import WelcomeModal from "@/components/WelcomeModal";
 import BouncingCircleButton from "@/components/BounceCircleButton";
+import FunFactModal from "@/components/FunFactModal";
 
 
 const ruxiImage = require('@/assets/images/Subject.png');
@@ -43,8 +44,9 @@ export default function Index() {
         <IconButton label="" onPress={() => router.push("/about_app")} icon="question-mark"/>
       </View>
       <View style={styles.footerCont}>
-        <Button theme="primary" label="Find Out!"/>
-        <Button label="Diff button!"/>
+        <Button theme="primary" label="Find Out!" onPress={openModal}/>
+        <FunFactModal visible={isModalVisible} onClose={onModalClose} />
+        <Button label="Diff button!" onPress={openModal}/>
       </View>
 
     </View>
