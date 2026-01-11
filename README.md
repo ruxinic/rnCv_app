@@ -1,50 +1,74 @@
-# Welcome to your Expo app 👋
+### CV App (Expo / React Native)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This repository contains a CV / portfolio mobile application built with Expo, React Native, and TypeScript.
+The app presents my background, education, grades, and projects in a mobile-friendly format.
 
-## Get started
+# Work in progress
+Some screens are unfinished and there is currently no live demo.
 
-1. Install dependencies
+# Tech Stack
+- Expo
+- React Native
+- TypeScript
+- Expo Go (development on physical device)
 
-   ```bash
-   npm install
-   ```
+# Screens & Features
+The app contains 5 screens, 4 accessible via a navigation bar.
+- Home (partially implemented)
+- Temporary profile picture
+- Two buttons opening text modals
+- One button opening a modal with an image
+- One button navigating to a screen explaining how to use the app
 
-2. Start the app
+# Screens not finished
+- About Me
+- Projects (to be implemented)
+- About app
 
-   ```bash
-   npx expo start
-   ```
+# Grades
+Table containing:
+- Courses
+- Grades
+- Dates
+- Links to study guides
 
-In the output, you'll find options to open the app in a
+# Education
+- Multiple cards
+- Each card represents a school with grades
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+# Current Status
+- Navigation bar implemented
+- Education and Grades screens completed
+- Home screen incomplete
+- About app and Projects screens not implemented
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+# No demo available yet
 
-## Get a fresh project
+Screenshots are provided instead of a demo.
 
-When you're ready, run:
+Screenshots
+![WhatsApp Image 2026-01-11 at 23 45 48](https://github.com/user-attachments/assets/c2e81c6a-c773-4940-9d98-20f65131b654)
+![WhatsApp Image 2026-01-11 at 23 45 48 (2)](https://github.com/user-attachments/assets/821d5d75-3242-4254-a2b9-c0169d5b05bd)
+![WhatsApp Image 2026-01-11 at 23 45 48 (1)](https://github.com/user-attachments/assets/360fea04-b5bc-47aa-aef0-e2a6b58501bb)
+![WhatsApp Image 2026-01-11 at 23 45 58](https://github.com/user-attachments/assets/b9ce8504-4845-4d34-a70c-bc5c9fee3925)
+![WhatsApp Image 2026-01-11 at 23 45 49](https://github.com/user-attachments/assets/4cb30055-35d7-4a72-b905-2a70daaab65d)
 
-```bash
-npm run reset-project
-```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
-## Learn more
+### Running the Project
+Install dependencies
+npm install
 
-To learn more about developing your project with Expo, look at the following resources:
+Start the app
+npx expo start
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
 
-## Join the community
+Open the app using Expo Go on your phone.
 
-Join our community of developers creating universal apps.
+Notes
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Developed using Expo Go on a physical device
+
+Built for learning and portfolio purposes
+
+Functionality and content will be expanded
