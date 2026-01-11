@@ -5,9 +5,28 @@ import React from 'react';
 type Props = {
     visible: boolean;
     onClose: () => void;
+    theme?: 'fun'
+    theme1?: 'casual'
 };
 
-export default function FunModal({visible, onClose, }:Props) { 
+export default function FunModal({visible, onClose, theme1, theme}:Props) { 
+  if(theme1 === 'casual'){
+    return (
+    <Modal
+      visible={visible}
+      transparent
+      animationType="fade"
+      onRequestClose={onClose}
+    >
+      <Pressable style={styles.overlay} onPress={onClose}>
+        <View style={styles.modalContent}>
+          <Text>Most of my projects are private on GitHub, as I have to follow my University's policy.</Text>
+        </View>
+      </Pressable>
+    </Modal>
+  );
+
+  }
   return (
     <Modal
       visible={visible}
