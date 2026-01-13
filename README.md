@@ -2,6 +2,7 @@
 
 This repository contains a CV / portfolio mobile application built with Expo, React Native, and TypeScript.
 The app presents my background, education, grades, and projects in a mobile-friendly format.
+learning from: `http://docs.expo.dev/tutorial`
 
 # Work in progress
 Some screens are unfinished and there is currently no live demo.
