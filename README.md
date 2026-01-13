@@ -25,6 +25,12 @@ The app contains 5 screens, 4 accessible via a navigation bar.
 - Projects
 - About app
 
+# About me
+- Principal picture (temporary)
+- Bouncing smiley face button that opens a modal containing a "Welcome!" image
+- Question Mark Icon Button that opens the About App screen
+- Two buttons that open modals containing text and still need to be customized
+
 # Grades
 Table containing:
 - Courses
