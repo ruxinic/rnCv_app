@@ -22,7 +22,7 @@ The app contains 5 screens, 4 accessible via a navigation bar.
 
 # Screens not finished
 - About Me
-- Projects (to be implemented)
+- Projects
 - About app
 
 # Grades
@@ -35,6 +35,11 @@ Table containing:
 # Education
 - Multiple cards
 - Each card represents a school with grades
+
+# Projects
+- Pressable text that opens a link to my GitHub profile
+- GitHub logo image
+- Disclaimer button opening a modal containing text
 
 # Current Status
 - Navigation bar implemented
@@ -52,9 +57,9 @@ Screenshots are provided instead of a demo.
   <img src="https://github.com/user-attachments/assets/360fea04-b5bc-47aa-aef0-e2a6b58501bb" width="200">
   <img src="https://github.com/user-attachments/assets/b9ce8504-4845-4d34-a70c-bc5c9fee3925" width="200">
   <img src="https://github.com/user-attachments/assets/4cb30055-35d7-4a72-b905-2a70daaab65d" width="200">
-</p>
-
-
+  <img src="https://github.com/user-attachments/assets/c51ce517-4a57-4268-9bda-68215148787e" width="200">
+  <img src="https://github.com/user-attachments/assets/24b8d6e6-ff62-442a-a61d-c3190f3a6578" width="200">
+  <img src="https://github.com/user-attachments/assets/0dad5308-d82f-402e-8590-77d3e5480b1e" width="200">
 
 ### Running the Project
 Install dependencies
