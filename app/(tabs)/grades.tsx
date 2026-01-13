@@ -162,7 +162,6 @@ const data = [
 export default function Grades() {
   return (
     <ScrollView style={styles.container}>
-      {/* Header */}
       <View style={[styles.row, styles.headerRow]}>
         <Text style={[styles.cell, styles.headerText]}>Course</Text>
         <Text style={[styles.cell, styles.headerText]}>Grade</Text>
@@ -170,7 +169,6 @@ export default function Grades() {
         <Text style={[styles.cell, styles.headerText]}>Study Guide</Text>
       </View>
 
-      {/* Data Rows */}
       {data.map((item, index) => (
         <View key={index} style={styles.row}>
           <Text style={styles.cell}>{item.course}</Text>
@@ -203,7 +201,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#f2f2f2",
   },
   cell: {
-    flex: 1, // each cell takes equal space
+    flex: 1,
     textAlign: "center",
   },
   headerText: {

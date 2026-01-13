@@ -16,6 +16,7 @@ const img = require("@/assets/images/welcome-illustration-svg-download-png-32314
 
 export default function Index() {
   const [isModalVisible, setIsModalVisible] = useState<boolean>(false);
+  const [isWelcomeVisible, setIsWelcomeVisible] = useState(false);
 
   const onModalClose = () => {
     setIsModalVisible(false);
@@ -25,6 +26,12 @@ export default function Index() {
     setIsModalVisible(true);
   }
 
+  const openWelcome = () => {
+    setIsWelcomeVisible(true);
+  }
+  const onWelcomeClose = () => {
+    setIsWelcomeVisible(false);
+  }
   return (
     <View style={styles.container}>
       <View style={styles.imageContainer}>
@@ -36,8 +43,8 @@ export default function Index() {
           <Text>Welcome to Ruxandra's CV app!</Text>
           <Text>Get ready to get to know me!</Text>
         </View>
-        <BouncingCircleButton onPress={openModal}/>
-        <WelcomeModal visible={isModalVisible} onClose={onModalClose} imgSource={img} />
+        <BouncingCircleButton onPress={openWelcome}/>
+        <WelcomeModal visible={isWelcomeVisible} onClose={onWelcomeClose} imgSource={img} />
       </View>
       <View style={styles.textContainer}>
         <Text>Press here to learn how to navigate the app:</Text>

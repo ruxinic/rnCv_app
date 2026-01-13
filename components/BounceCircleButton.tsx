@@ -27,8 +27,6 @@ export default function BouncingCircleButton({ onPress }: Props) {
     );
 
     bounce.start();
-
-    // Cleanup on unmount
     return () => bounce.stop();
   }, []);
 
