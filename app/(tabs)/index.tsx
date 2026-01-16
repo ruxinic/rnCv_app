@@ -40,14 +40,14 @@ export default function Index() {
         <WelcomeModal visible={isWelcomeVisible} onClose={onWelcomeClose} imgSource={img} />
         <Text style={styles.textContainer}>Get ready to get to know me!</Text>
       </View>
-      <View style={styles.textContainer}>
-        <Text >Press here to learn how to navigate the app:</Text>
-        <IconButton label="" onPress={() => router.push("/about_app")} icon="question-mark"/>
-      </View>
-      <View style={styles.footerCont}>
+      <View style={{padding: 20, flex: 1.2}}>
         <Button theme="primary" label="Find Out!" onPress={openModal}/>
         <FunFactModal visible={isModalVisible} onClose={onModalClose} />
         <Button label="Diff button!" onPress={openModal}/>
+      </View>
+       <View style={styles.footerCont}>
+        <Text >Press here to learn how to navigate the app:</Text>
+        <IconButton label="" onPress={() => router.push("/about_app")} icon="question-mark"/>
       </View>
 
     </View>
@@ -56,7 +56,7 @@ export default function Index() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1.2,
+    flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
   },
@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
     padding: 15,
   },
   footerCont: {
-    flex: 1.5,
+    flex: 1,
     alignItems: 'center',
   },
   row: {
