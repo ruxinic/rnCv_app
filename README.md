@@ -59,7 +59,7 @@ Table containing:
 Screenshots are provided instead of a demo.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/c2e81c6a-c773-4940-9d98-20f65131b654" width="200">
+  <img src="https://github.com/user-attachments/assets/c87630d2-3a72-4918-ad65-4611233e2158" width="200">
   <img src="https://github.com/user-attachments/assets/821d5d75-3242-4254-a2b9-c0169d5b05bd" width="200">
   <img src="https://github.com/user-attachments/assets/360fea04-b5bc-47aa-aef0-e2a6b58501bb" width="200">
   <img src="https://github.com/user-attachments/assets/b9ce8504-4845-4d34-a70c-bc5c9fee3925" width="200">
