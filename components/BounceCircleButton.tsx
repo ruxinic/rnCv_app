@@ -36,7 +36,7 @@ export default function BouncingCircleButton({ onPress }: Props) {
       { transform: [{ scale }] }
     ]}>
       <Pressable style={styles.circleButton} onPress={onPress}>
-        <MaterialCommunityIcons name="emoticon-outline" size={38} color="#25292e" />
+        <MaterialCommunityIcons name="flower-tulip-outline" size={38} color="#25292e" />
       </Pressable>
     </Animated.View>
   );

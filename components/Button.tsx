@@ -1,4 +1,4 @@
-import FontAwesome from '@expo/vector-icons/FontAwesome';
+import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
 type Props = {
@@ -14,12 +14,12 @@ export default function Button({ label, theme, onPress, theme1 }: Props) {
       <View
         style={[
           styles.buttonContainer,
-          { borderWidth: 4, borderColor: '#d9c4caff', borderRadius: 18 },
+          { borderWidth: 3, borderColor: 'rgb(218, 134, 196)', borderRadius: 18 },
         ]}>
         <Pressable
           style={[styles.button, { backgroundColor: '#cfaccaff' }]}
           onPress={onPress}>
-          <FontAwesome name="picture-o" size={18} color="#25292e" style={styles.buttonIcon} />
+          <MaterialCommunityIcons name="cat" size={18} color="#25292e" style={styles.buttonIcon} />
           <Text style={[styles.buttonLabel, { color: '#25292e' }]}>{label}</Text>
         </Pressable>
       </View>
@@ -30,7 +30,7 @@ export default function Button({ label, theme, onPress, theme1 }: Props) {
       <View
         style={[
           styles.buttonContainer,
-          { borderWidth: 4, borderColor: '#d9c4caff', borderRadius: 18 },
+          { borderWidth: 3, borderColor: '#d9c4caff', borderRadius: 18},
         ]}>
         <Pressable
           style={[styles.button, { backgroundColor: '#cfaccaff' }]}
@@ -42,7 +42,7 @@ export default function Button({ label, theme, onPress, theme1 }: Props) {
   }
 
   return (
-    <View style={[styles.buttonContainer, {paddingTop: 5, borderWidth: 4, borderColor: '#b66c9cff', borderRadius:18},]}>
+    <View style={[styles.buttonContainer, {borderWidth: 3, borderColor: '#b66c9cff', borderRadius:18},]}>
       <Pressable style={styles.button} onPress={() => alert('FUN FACT.')}>
         <Text style={[styles.buttonLabel, {color: '#160213ff'}]}>{label}</Text>
       </Pressable>
@@ -52,12 +52,13 @@ export default function Button({ label, theme, onPress, theme1 }: Props) {
 
 const styles = StyleSheet.create({
   buttonContainer: {
-    width: 250,
-    height: 40,
+    width: 210,
+    height: 35,
     marginHorizontal: 10,
     alignItems: 'center',
     justifyContent: 'center',
     padding: 3,
+    borderRadius: 15,
   },
   button: {
     borderRadius: 10,

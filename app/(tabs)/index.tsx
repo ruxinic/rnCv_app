@@ -38,9 +38,9 @@ export default function Index() {
       <View style={styles.row}>
         <BouncingCircleButton onPress={openWelcome}/>
         <WelcomeModal visible={isWelcomeVisible} onClose={onWelcomeClose} imgSource={img} />
-        <Text style={styles.textContainer}>Get ready to get to know me!</Text>
+        <Text style={styles.desc}>Get ready to get to know me!</Text>
       </View>
-      <View style={{padding: 20, flex: 1.2}}>
+      <View style={{padding: 20, flex: 1.2, gap: 7}}>
         <Button theme="primary" label="Find Out!" onPress={openModal}/>
         <FunFactModal visible={isModalVisible} onClose={onModalClose} />
         <Button label="Diff button!" onPress={openModal}/>
@@ -67,6 +67,10 @@ const styles = StyleSheet.create({
   footerCont: {
     flex: 1,
     alignItems: 'center',
+  },
+  desc: {
+    fontWeight: "bold",
+    fontSize: 15,
   },
   row: {
     flexDirection: 'row',
