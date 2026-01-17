@@ -65,7 +65,6 @@ Screenshots are provided instead of a demo.
   <img src="https://github.com/user-attachments/assets/b9ce8504-4845-4d34-a70c-bc5c9fee3925" width="200">
   <img src="https://github.com/user-attachments/assets/4cb30055-35d7-4a72-b905-2a70daaab65d" width="200">
   <img src="https://github.com/user-attachments/assets/c51ce517-4a57-4268-9bda-68215148787e" width="200">
-  <img src="https://github.com/user-attachments/assets/24b8d6e6-ff62-442a-a61d-c3190f3a6578" width="200">
   <img src="https://github.com/user-attachments/assets/0dad5308-d82f-402e-8590-77d3e5480b1e" width="200">
 
 ### Running the Project
