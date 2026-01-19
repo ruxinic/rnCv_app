@@ -1,17 +1,15 @@
-import { View, Text, Image, StyleSheet } from "react-native";
-import React from "react";
+import { View, Text, StyleSheet } from "react-native";
 import ImageViewer from "./ImageViewer";
 
 
 export default function HomeCard() {
     const ruxiImage = require('@/assets/images/rux.png');
-
     return (
- 
         <View style={styles.card}>
             <View style={styles.imageContainer}>
                 <ImageViewer imgSource={ruxiImage} />
             </View>
+
             <View style={styles.textContainer}>
                 <Text style={styles.hello}>Hello there!</Text>
                 <Text style={styles.desc}>Welcome to Ruxandra's CV app!</Text>

@@ -3,11 +3,10 @@ import Button from "@/components/Button";
 import { useState } from "react";
 import FunModal from "@/components/FunFactModal";
 import ImageViewer from "@/components/ImageViewer";
+import React from "react";
 
 export default function Projects() {
-
   const [isModalVisible, setIsModalVisible] = useState<boolean>(false);
-
   const url = 'https://github.com/ruxinic';
   const gitImg = require('@/assets/images/gitpic1.png');
 
@@ -20,11 +19,9 @@ export default function Projects() {
       console.warn("Cannot open link");
     }
   }
-  
   const onModalClose = () => {
     setIsModalVisible(false);
   }
-  
   const openModal = () => {
     setIsModalVisible(true);
   }
@@ -42,17 +39,15 @@ export default function Projects() {
         <Button
           label="Disclaimer!"
           theme1="casual"
-          onPress={openModal}
-        />
+          onPress={openModal}/>
         <FunModal
         visible={isModalVisible}
         onClose={onModalClose}
-        theme1="casual"
-      />
+        theme1="casual"/>
 
       </View>
       <Text style={{ textAlign: 'center', marginBottom: 40 }}>
-        list and info about projects ive done
+        list and info about projects i have done
       </Text>
     </View>
   );
@@ -63,21 +58,17 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
   },
-
   topSection: {
     alignItems: 'center',
     marginTop: 30,
   },
-
   textContainer: {
     padding: 10,
   },
-
   textStyle: {
     fontSize: 15,
     fontWeight: 'bold',
   },
-
   middleSection: {
     flex: 1,
     justifyContent: 'center',

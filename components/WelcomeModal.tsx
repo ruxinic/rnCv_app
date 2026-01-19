@@ -1,6 +1,5 @@
 import { StyleSheet, Text, View, Modal, Pressable } from 'react-native';
 import { Image } from "expo-image";
-import React from 'react';
 
 type Props = {
     visible: boolean;

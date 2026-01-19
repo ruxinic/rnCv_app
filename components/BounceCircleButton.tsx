@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { Animated, Pressable, StyleSheet, View} from "react-native";
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
-import CircleButton from "./CircleButton";
 
 type Props = {
   onPress: () => void;

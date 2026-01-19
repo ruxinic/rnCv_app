@@ -1,10 +1,11 @@
-import { Text, View , StyleSheet} from "react-native";
+import { Text, StyleSheet} from "react-native";
 import EducationCard from "@/components/EducationCard";
 import { ScrollView } from "react-native";
+import React from "react";
 
 export default function Education() {
- const highSchoolLogo = require("@/assets/images/cnitv.png");
-const universityLogo = require("@/assets/images/vu.png");
+  const highSchoolLogo = require("@/assets/images/cnitv.png");
+  const universityLogo = require("@/assets/images/vu.png");
 
   return (
     <ScrollView style={styles.container} contentContainerStyle={{ padding: 16 }}>
@@ -16,8 +17,7 @@ const universityLogo = require("@/assets/images/vu.png");
         location="Bucharest, Romania"
         timeline="2019 - 2023"
         description="put desc"
-        logo={highSchoolLogo}
-      />
+        logo={highSchoolLogo}/>
 
       <EducationCard
         institution="Vrije Universiteit Amsterdam"
@@ -25,8 +25,7 @@ const universityLogo = require("@/assets/images/vu.png");
         location="Amsterdam, Netherlands"
         timeline="2023 - Present"
         description="put desc"
-        logo={universityLogo}
-      />
+        logo={universityLogo}/>
 
       <EducationCard
         institution="Vrije Universiteit Amsterdam"
@@ -34,12 +33,9 @@ const universityLogo = require("@/assets/images/vu.png");
         location="Amsterdam, Netherlands"
         timeline="2024"
         description="Honours student put desc"
-        logo={universityLogo}
-      />
+        logo={universityLogo}/>
     </ScrollView>
-  );
-}
-
+);}
 
 const styles = StyleSheet.create({
   container: {

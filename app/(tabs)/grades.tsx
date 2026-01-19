@@ -1,11 +1,12 @@
 import { View, Text, StyleSheet, Pressable, Linking, ScrollView } from "react-native";
+import React from "react";
 
 const data = [
-    { 
-      course: "Computer Programming Project", 
-      grade: "7.5", 
-      date: "09.07.2024", 
-      guideLink: "https://example.com/proj" },
+  { 
+    course: "Computer Programming Project", 
+    grade: "7.5", 
+    date: "09.07.2024", 
+    guideLink: "https://example.com/proj" },
   { 
     course: 
     "Statistical Methods", 
@@ -163,10 +164,12 @@ export default function Grades() {
   return (
     <ScrollView style={styles.container}>
       <View style={[styles.row, styles.headerRow]}>
+        
         <Text style={[styles.cell, styles.headerText]}>Course</Text>
         <Text style={[styles.cell, styles.headerText]}>Grade</Text>
         <Text style={[styles.cell, styles.headerText]}>Date Achieved</Text>
         <Text style={[styles.cell, styles.headerText]}>Study Guide</Text>
+      
       </View>
 
       {data.map((item, index) => (
@@ -174,12 +177,13 @@ export default function Grades() {
           <Text style={styles.cell}>{item.course}</Text>
           <Text style={styles.cell}>{item.grade}</Text>
           <Text style={styles.cell}>{item.date}</Text>
+          
           <Pressable
             style={styles.cell}
-            onPress={() => Linking.openURL(item.guideLink)}
-          >
+            onPress={() => Linking.openURL(item.guideLink)}>
             <Text style={styles.linkText}>Open Link</Text>
           </Pressable>
+        
         </View>
       ))}
     </ScrollView>

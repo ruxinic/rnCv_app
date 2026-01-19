@@ -2,7 +2,6 @@ import { View, Text, Image, StyleSheet } from "react-native";
 import React from "react";
 import ActionItem from "./ActionsListItems";
 import Button from "./Button";
-import { router } from "expo-router";
 
 type Props = {
     title: string;
@@ -11,11 +10,10 @@ type Props = {
     action2?: string;
     action3?: string;
     action4?: string;
-    onpress?: () => void;
+    onPress?: () => void;
 };
 
-
-export default function AboutCard({title, desc, action1, action2, action3, action4, onpress} : Props) {
+export default function AboutCard({title, desc, action1, action2, action3, action4, onPress} : Props) {
     return (
         <View style={styles.card}>
             <View style={styles.textContainer}>
@@ -25,13 +23,12 @@ export default function AboutCard({title, desc, action1, action2, action3, actio
                 {action2 && <ActionItem text={action2}/>}
                 {action3 && <ActionItem text={action3}/>}
                 {action4 && <ActionItem text={action4}/>}
-              </View>
-              {onpress && <Button
-                    label="Try it out!"
-                    onPress={onpress}
-                    theme2 = 'about'/>}
-
             </View>
+              {onPress && <Button
+                    label="Try it out!"
+                    onPress={onPress}
+                    theme2 = 'about'/>}
+        </View>
     );
 }
 
