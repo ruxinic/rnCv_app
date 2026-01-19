@@ -66,6 +66,8 @@ Screenshots are provided instead of a demo.
   <img src="https://github.com/user-attachments/assets/3720e64c-a5d6-478b-bf84-c563c3004a74" width="200">
   <img src="https://github.com/user-attachments/assets/c51ce517-4a57-4268-9bda-68215148787e" width="200">
   <img src="https://github.com/user-attachments/assets/0dad5308-d82f-402e-8590-77d3e5480b1e" width="200">
+  <img width="1873" height="811" alt="Screenshot 2026-01-19 211507" src="https://github.com/user-attachments/assets/28d7d7ac-81cb-4d06-86cc-460ba0067113" />
+
   
 ### Running the Project
 Install dependencies
