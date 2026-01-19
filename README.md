@@ -2,10 +2,10 @@
 
 This repository contains a CV / portfolio mobile application built with Expo, React Native, and TypeScript.
 The app presents my background, education, grades, and projects in a mobile-friendly format.
-learning from: `http://docs.expo.dev/tutorial`
+learning from: `http://docs.expo.dev/tutorial` and `https://reactnative.dev/docs`
 
 # Work in progress
-Some screens are unfinished and there is currently no live demo.
+Some screens are unfinished and there is currently no live demo. The app can be accessed only by running the code.
 
 # Tech Stack
 - Expo
@@ -14,20 +14,10 @@ Some screens are unfinished and there is currently no live demo.
 - Expo Go (development on physical device)
 
 # Screens & Features
-The app contains 5 screens, 4 accessible via a navigation bar.
-- Home (partially implemented)
-- Temporary profile picture
-- Two buttons opening text modals
-- One button opening a modal with an image
-- One button navigating to a screen explaining how to use the app
-
-# Screens not finished
-- About Me
-- Projects
-- About app
+The app contains 6 screens, 4 accessible via a navigation bar, one accessible via a button and one that renders when accessing a wrong link:
 
 # About me
-- Principal picture (temporary)
+- Principal picture and text displayed within a card layout
 - Bouncing smiley face button that opens a modal containing a "Welcome!" image
 - Question Mark Icon Button that opens the About App screen
 - Two buttons that open modals containing text and still need to be customized
@@ -41,18 +31,26 @@ Table containing:
 
 # Education
 - Multiple cards
-- Each card represents a school with grades
+- Each card represents a school with descriptions timelines and logo images
 
 # Projects
 - Pressable text that opens a link to my GitHub profile
 - GitHub logo image
 - Disclaimer button opening a modal containing text
 
+# About App
+- Uses the AboutCard component to display a description of each screen within a separate card
+- Each card contains a list formed with the AboutItem component
+- Each card contains a button that sends the user to the specific screen by pushing it on top of the stack
+
+# Not found
+- Renders when accessing a wrong link
+- Displays a link that sends the user back to the home screen when pressed
+
 # Current Status
 - Navigation bar implemented
 - Education and Grades screens completed
-- Home screen incomplete
-- About app and Projects screens not implemented
+- Home screen, About app and Projects screens need refinement
 
 # No demo available yet
 
