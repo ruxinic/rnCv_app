@@ -11,7 +11,7 @@ export default function HomeCard() {
         <View style={styles.card}>
             <View style={styles.imageContainer}>
                 <ImageViewer imgSource={ruxiImage} />
-        </View>
+            </View>
             <View style={styles.textContainer}>
                 <Text style={styles.hello}>Hello there!</Text>
                 <Text style={styles.desc}>Welcome to Ruxandra's CV app!</Text>

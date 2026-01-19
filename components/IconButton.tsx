@@ -3,7 +3,7 @@ import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 
 type Props = {
   onPress: () => void;
-  label: string;
+  label?: string;
   icon: keyof typeof MaterialIcons.glyphMap;
 };
 
@@ -11,18 +11,19 @@ export default function IconButton({ onPress, icon, label }: Props) {
   return (
     <Pressable style={styles.iconButton} onPress={onPress}>
         <MaterialIcons name={icon} size={30} color="#c81e1eff" />
-        <Text style={styles.iconButtonLabel}> {label} </Text>
     </Pressable>
   );
 }
 
 const styles = StyleSheet.create({
-  iconButtonLabel: {
-    color: "#881b7aff",
-    marginTop: 12,
-  },
   iconButton: {
+    padding: 3,
     justifyContent: 'center',
     alignItems: 'center',
+    borderColor: '#c83737',
+    borderWidth: 2,
+    borderRadius: 25,
+    width: 43,
+    height: 40,
   },
 });

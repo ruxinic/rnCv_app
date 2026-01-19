@@ -47,7 +47,7 @@ export default function Index() {
       </View>
        <View style={styles.footerCont}>
         <Text >Press here to learn how to navigate the app:</Text>
-        <IconButton label="" onPress={() => router.push("/about_app")} icon="question-mark"/>
+        <IconButton onPress={() => router.push("/about_app")} icon="question-mark"/>
       </View>
 
     </View>
