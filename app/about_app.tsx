@@ -5,13 +5,13 @@ import { router } from "expo-router";
 
 export default function Education() {
   const goEducation = () => {
-    router.push("/education");
+    router.push("/(tabs)/education");
   }
   const goProjects = () => {
-    router.push("/projects");
+    router.push("/(tabs)/projects");
   }
   const goGrades = () => {
-    router.push("/grades");
+    router.push("/(tabs)/grades");
   }
   const goHomeScreen = () => {
     router.push("/");
