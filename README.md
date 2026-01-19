@@ -63,10 +63,10 @@ Screenshots are provided instead of a demo.
   <img src="https://github.com/user-attachments/assets/821d5d75-3242-4254-a2b9-c0169d5b05bd" width="200">
   <img src="https://github.com/user-attachments/assets/360fea04-b5bc-47aa-aef0-e2a6b58501bb" width="200">
   <img src="https://github.com/user-attachments/assets/b9ce8504-4845-4d34-a70c-bc5c9fee3925" width="200">
-  <img src="https://github.com/user-attachments/assets/4cb30055-35d7-4a72-b905-2a70daaab65d" width="200">
+  <img src="https://github.com/user-attachments/assets/3720e64c-a5d6-478b-bf84-c563c3004a74" width="200">
   <img src="https://github.com/user-attachments/assets/c51ce517-4a57-4268-9bda-68215148787e" width="200">
   <img src="https://github.com/user-attachments/assets/0dad5308-d82f-402e-8590-77d3e5480b1e" width="200">
-
+  
 ### Running the Project
 Install dependencies
 npm install
