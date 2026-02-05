@@ -20,14 +20,15 @@ The app contains 6 screens, 4 accessible via a navigation bar, one accessible vi
 - Principal picture and text displayed within a card layout
 - Bouncing smiley face button that opens a modal containing a "Welcome!" image
 - Question Mark Icon Button that opens the About App screen
-- Two buttons that open modals containing text and still need to be customized
+- A "Find Out!" button which opens a modal with information about my technical passions
+- A "Check this out!" button which opens a scrollable modal containing screenshots of my very first website - a travel album with internal/external links and an interactive form
 
 # Grades
 Table containing:
 - Courses
 - Grades
 - Dates
-- Links to study guides
+- Links to study guides (not yet added)
 
 # Education
 - Multiple cards
@@ -49,15 +50,17 @@ Table containing:
 
 # Current Status
 - Navigation bar implemented
-- Education and Grades screens completed
-- Home screen, About app and Projects screens need refinement
+- About Me (Home screen), About App, Education and Grades screens completed
+- Projects screens need refinement
 
 # No demo available yet
 
 Screenshots are provided instead of a demo.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/fd2597ba-a69b-4947-ae1e-aa966e4b4922" width="200">
+  <img src="https://github.com/user-attachments/assets/5bf1b610-3e9a-498b-83fc-b6f340fbed21" width="200">
+  <img src="https://github.com/user-attachments/assets/b8111d4e-73d5-49e6-9cdd-d4514e20cb59" width="200">
+  <img src="https://github.com/user-attachments/assets/473666b7-2b15-44cb-91af-ddf67cdab19d" width="200">
   <img src="https://github.com/user-attachments/assets/821d5d75-3242-4254-a2b9-c0169d5b05bd" width="200">
   <img src="https://github.com/user-attachments/assets/360fea04-b5bc-47aa-aef0-e2a6b58501bb" width="200">
   <img src="https://github.com/user-attachments/assets/b9ce8504-4845-4d34-a70c-bc5c9fee3925" width="200">
