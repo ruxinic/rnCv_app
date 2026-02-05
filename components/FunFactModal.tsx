@@ -35,7 +35,10 @@ export default function FunModal({visible, onClose, theme1, theme}:Props) {
     >
       <Pressable style={styles.overlay} onPress={onClose}>
         <View style={styles.modalContent}>
-          <Text>Im 21 and i got a cat named Sisoe.</Text>
+          <Text style={{fontFamily: "Avenir-Medium", fontSize: 16, letterSpacing: 0.5, fontWeight: '400', textAlign: 'center', lineHeight: 24,}}>I enjoy working on everything, from the backend logic to the frontend pixels. 
+            Right now, I'm following my curiosity deep into the world of frontend! I'm building projects 
+            with React and React Native, and I'm planning on focusing on Tailwind CSS for my next project. 
+            I just love the process of bringing web and mobile apps to life!</Text>
         </View>
       </Pressable>
     </Modal>
@@ -50,10 +53,13 @@ const styles = StyleSheet.create({
       alignItems: "center",
     },
     modalContent: {
-      backgroundColor: "#fff",
-      padding: 20,
+      backgroundColor: "#fff9fc",
+      padding: 23,
       borderRadius: 16,
-      width: "90%",
+      width: "70%",
+      height: "35%",
+      borderWidth: 2,
+      borderColor: "#db6abe"
     },
     image: {
       width: "100%",

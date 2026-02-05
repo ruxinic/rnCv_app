@@ -20,7 +20,7 @@ export default function Button({ label, theme, onPress, theme1, theme2 }: Props)
         <Pressable
           style={[styles.button, { backgroundColor: '#cfaccaff' }]}
           onPress={onPress}>
-          <MaterialCommunityIcons name="cat" size={18} color="#25292e" style={styles.buttonIcon} />
+          <MaterialCommunityIcons name="laptop" size={18} color="#25292e" style={styles.buttonIcon} />
           <Text style={[styles.buttonLabel, { color: '#25292e' }]}>{label}</Text>
         </Pressable>
       </View>
@@ -52,7 +52,7 @@ export default function Button({ label, theme, onPress, theme1, theme2 }: Props)
   }
   return (
     <View style={[styles.buttonContainer, {borderWidth: 2, borderColor: '#b66c9cff', borderRadius:18},]}>
-      <Pressable style={styles.button} onPress={() => alert('FUN FACT.')}>
+      <Pressable style={styles.button} onPress={onPress}>
         <Text style={[styles.buttonLabel, {color: '#160213ff'}]}>{label}</Text>
       </Pressable>
     </View>

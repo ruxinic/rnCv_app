@@ -8,12 +8,17 @@ import BouncingCircleButton from "@/components/BounceCircleButton";
 import FunFactModal from "@/components/FunFactModal";
 import HomeCard from "@/components/HomeCard";
 import React from "react";
+import WebsiteModal from "@/components/WebsiteModal"
 
 const img = require("@/assets/images/welcome-illustration-svg-download-png-3231448.png");
+const web1 = require("@/assets/images/website1.png")
+const web2 = require("@/assets/images/website2.png")
+const web3 = require("@/assets/images/website3.png")
 
 export default function Index() {
   const [isModalVisible, setIsModalVisible] = useState<boolean>(false);
   const [isWelcomeVisible, setIsWelcomeVisible] = useState<boolean>(false);
+  const [isWebModalVisible, setIsWebModalVisible] = useState<boolean>(false);
 
   const onModalClose = () => {
     setIsModalVisible(false);
@@ -21,6 +26,14 @@ export default function Index() {
   const openModal = () => {
     setIsModalVisible(true);
   }
+
+  const onWebModalClose = () => {
+    setIsWebModalVisible(false);
+  }
+  const onWebModalOpen = () => {
+    setIsWebModalVisible(true);
+  }
+
   const openWelcome = () => {
     setIsWelcomeVisible(true);
   }
@@ -40,7 +53,8 @@ export default function Index() {
       <View style={{padding: 20, flex: 1.2, gap: 7}}>
         <Button theme="primary" label="Find Out!" onPress={openModal}/>
         <FunFactModal visible={isModalVisible} onClose={onModalClose} />
-        <Button label="Diff button!" onPress={openModal}/>
+        <Button label="Check this!" onPress={onWebModalOpen}/>
+        <WebsiteModal visible={isWebModalVisible} onClose={onWebModalClose} imgS1={web1} imgS2={web2} imgS3={web3} />
       </View>
 
        <View style={styles.footerCont}>

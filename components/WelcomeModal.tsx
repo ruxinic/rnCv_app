@@ -5,9 +5,11 @@ type Props = {
     visible: boolean;
     onClose: () => void;
     imgSource: any;
+    imgS1? :any,
+    imgS2? : any,
 };
 
-export default function ImageModal({visible, onClose, imgSource}:Props) { 
+export default function ImageModal({visible, onClose, imgSource, imgS1, imgS2}:Props) { 
   return (
     <Modal
       visible={visible}
@@ -18,6 +20,8 @@ export default function ImageModal({visible, onClose, imgSource}:Props) {
       <Pressable style={styles.overlay} onPress={onClose}>
         <View style={styles.modalContent}>
           <Image source={imgSource} style={styles.image} contentFit="contain" />
+          {imgS1 && <Image source={imgS1} style={styles.image} contentFit="contain" />}
+          {imgS2 && <Image source={imgS2} style={styles.image} contentFit="contain" />}
         </View>
       </Pressable>
     </Modal>
