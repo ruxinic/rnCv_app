@@ -53,7 +53,7 @@ export default function Index() {
       <View style={{padding: 20, flex: 1.2, gap: 7}}>
         <Button theme="primary" label="Find Out!" onPress={openModal}/>
         <FunFactModal visible={isModalVisible} onClose={onModalClose} />
-        <Button label="Check this!" onPress={onWebModalOpen}/>
+        <Button label="Check this out!" onPress={onWebModalOpen}/>
         <WebsiteModal visible={isWebModalVisible} onClose={onWebModalClose} imgS1={web1} imgS2={web2} imgS3={web3} />
       </View>
 
