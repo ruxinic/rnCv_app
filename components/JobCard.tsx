@@ -1,26 +1,24 @@
 import { View, Text, Image, StyleSheet } from "react-native";
 
 type Props = {
-  institution: string;
-  type?: string;
-  profile: string;
-  specialization?: string;
+  title: string;
+  employer: string;
+  type: string;
   timeline: string;
   description: string;
   logo?: any
   location: string;
 };
 
-export default function EducationCard({ profile, type, institution, specialization, timeline, description, logo, location }: Props) {
+export default function JobCard({title, type, employer, timeline, description, logo, location }: Props) {
   return (
     <View style={styles.card}>
       {logo && <Image source={logo} style={styles.logo} />}
       <View style={styles.textContainer}>
-        <Text style={styles.institution}>{institution}</Text>
-        <Text style={styles.profile}>{type}</Text>
-        <Text style={styles.profile}>{profile}</Text>
-        <Text style={styles.profile}>{specialization}</Text>
-        <Text style={styles.profile}>{location}</Text>
+        <Text style={styles.institution}>{title}</Text>
+        <Text style={styles.profile}>{employer}</Text>
+        <Text style={styles.timeline}>{type}</Text>
+        <Text style={styles.timeline}>{location}</Text>
         <Text style={styles.timeline}>{timeline}</Text>
         <Text style={styles.description}>{description}</Text>
       </View>

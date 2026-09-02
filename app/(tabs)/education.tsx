@@ -12,18 +12,21 @@ export default function Education() {
       <Text style={styles.header}>🎓 Education</Text>
 
       <EducationCard
-        institution="National College of Computer Science Tudor Vianu"
-        profile="Mathematics-informatics, Informatics intensive"
-        location="Bucharest, Romania"
-        timeline="2019 - 2023"
+        institution="Vrije Universiteit Amsterdam & Universiteit van Amsterdam"
+        type="Joint Degree"
+        profile="MSc Computer Science"
+        specialization="Big Data Engineering"
+        location="Amsterdam, Netherlands"
+        timeline="Sept 2026 - Present"
         description="put desc"
-        logo={highSchoolLogo}/>
+        logo={universityLogo}/>
 
       <EducationCard
         institution="Vrije Universiteit Amsterdam"
         profile="BSc Computer Science"
+        specialization="Free Minor"
         location="Amsterdam, Netherlands"
-        timeline="2023 - Present"
+        timeline="Sept 2023 - July 2026"
         description="put desc"
         logo={universityLogo}/>
 
@@ -31,9 +34,18 @@ export default function Education() {
         institution="Vrije Universiteit Amsterdam"
         profile="Honours & Awards"
         location="Amsterdam, Netherlands"
-        timeline="2024"
+        timeline="Sept 2024 - July 2026"
         description="Honours student put desc"
         logo={universityLogo}/>
+
+      <EducationCard
+        institution="National College of Computer Science Tudor Vianu"
+        profile="Mathematics-informatics, Informatics intensive"
+        location="Bucharest, Romania"
+        timeline="Sept 2019 - July 2023"
+        description="put desc"
+        logo={highSchoolLogo}/>
+
     </ScrollView>
 );}
 

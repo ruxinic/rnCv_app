@@ -5,6 +5,7 @@ export default function RootLayout() {
     <Stack>
       <Stack.Screen name = "index" options={{title: "About me..."}} />
       <Stack.Screen name = "education" options={{title: "Education"}} />
+      <Stack.Screen name = "CV" options={{title: "CV"}} />
       <Stack.Screen name = "projects" options={{title: "Projects"}} />
       <Stack.Screen name = "grades" options={{title:"Grades"}}/>
       <Stack.Screen name = "(tabs)" options={{headerShown: false}} />

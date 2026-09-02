@@ -48,6 +48,14 @@ export default function TabLayout() {
                     color={color} size={24} />
                 )
                 }} />
+            <Tabs.Screen name = "cv" 
+            options={{
+                title: "CV",
+                tabBarIcon: ({color, focused}) => 
+                (<MaterialCommunityIcons name = {focused ? 'book-outline': 'book'}
+                    color={color} size={24} />
+                )
+                }} />
         </Tabs>
     );
 }
