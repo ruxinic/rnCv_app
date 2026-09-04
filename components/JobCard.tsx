@@ -10,7 +10,7 @@ type Props = {
   location: string;
 };
 
-export default function JobCard({title, type, employer, timeline, description, logo, location }: Props) {
+export default function JobCard({ title, type, employer, timeline, description, logo, location }: Props) {
   return (
     <View style={styles.card}>
       {logo && <Image source={logo} style={styles.logo} />}
